@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/icons/favicon.svg" type="image/x-icon">
+  <title>albertoflavio.com</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+  <div id="loading">
+    <div id="spinner"></div>
+  </div>
+  <div id="particles-js"></div>
+  <div id="box">
+    <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+    <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:2.0s;"></div>
+    <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:2.1s;"></div>
+    <div class="box2 onlywide animated bounceOutRight" style="animation-delay:2.1s;"></div>
+    <div class="box2 onlywide animated bounceOutRight" style="animation-delay:2.0s;"></div>
+    <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.9s;"></div>
+  </div>
+  <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">About</a>
+  <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">Projects</a>
+  <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">Skills</a>
+  <div id="middle" class="animated slideInDown" style="animation-delay:0.3s;">
+    <h1>Alberto Flavio</h1>
+    <h2>Software Engineer</h2>
+    <div id="menu">
+      <a onclick="showabout()">About</a>
+      <a onclick="showwork()">Projects</a>
+      <a onclick="showcontact()">Skills</a>
+    </div>
+    <div class="gtranslate_wrapper"></div>
+    <table>
+        <tr>
+          <td class="animated zoomIn" style="animation-delay:2.8s;"><a href="https://www.linkedin.com/in/albertorflavio/" target="_blank" class="social"><i class="fab fa-linkedin"></i></a></td>
+          <td class="animated zoomIn" style="animation-delay:2.8s;"><a href="https://github.com/albertoribeiro" target="_blank"class="social"><i class="fab fa-github"></i></a></td>
+          <td class="animated zoomIn" style="animation-delay:2.8s;"><a href="mailto:alberto.r.flavio@gmail.com" target="_blank"class="social"><i class="fa fa-envelope"></i></a></td>
+        </tr>
+    </table>
+  </div>
+  <div id="work_container" class="container">
+    <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+    <h1 class="subtitle">My Projects</h1>
+    <section id="projeto1">
+      <div class="projeto_img">
+        <div class="animated zoomIn" style="animation-delay:0.5s;"><a href="https://albertoflavio.tech/" target="_blank"><img src="./assets/images/threeJS.png" alt="threejs"></a></div>
+        <div class="animated zoomIn" style="animation-delay:0.6s; cursor: default;">
+          <p>
+            <strong>AI-powered 3D t-shirt customization</strong> 
+            &nbsp;&nbsp;<a href="https://github.com/albertoribeiro/threejs_ai" target="_blank" class="social"><i class="fab fa-github" ></i></a><br>
+            <br>Customize a stunning 3D model.
+            <br>Code reusable and scalable using Higher Order Components (HOCs) and other industry-standard best practices.
+            <br>Generate and use images through DALLE AI using apenAi API.
+            <br>Responsiveness across all devices and improve your site's performance.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="about_container" class="container">
+      <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+      <h1 class="subtitle">About me</h1>
+      <section class="aboutme">
+        <div class="perfil">
+          <div class="photo"><img src="./assets/images/alberto.jpeg" alt="That's me" height="200" width="400"></div>
+          <a class="btn_cv" href="./assets/Alberto_Flavio_Resume.pdf"  do>My Resume</a>
+        </div>
+        <div class="texto">
+          <h2>A Journey Through Technology: My Passion for Software Development</h2>
+          <p>
+            I am a passionate software engineer with a deep love for technology and a knack for solving complex problems. My journey in the world of IT began during my teenage years, where I honed my skills by assembling my own computers and witnessed the dawn of the internet era.
+          <br><br>
+            My professional journey started as an intern providing technical support, and it quickly evolved as I transitioned into a developer. Throughout my career, I've witnessed the ever-evolving landscape of software development, progressing from technologies like VB6 to .NET, C#, SQL, and embracing modern web application development with JavaScript, including Node.js and React. I've also ventured into the world of DevOps, working with tools like Docker to streamline the development process.
+          <br><br>
+            My passion for learning drives me to explore new horizons, and I've delved into languages such as Go and Python, as well as delving into machine learning concepts. Currently, I'm deeply immersed in the world of clean architecture and Test-Driven Development (TDD).
+          <br><br>
+            My journey in the realm of technology has been marked by continuous growth, adaptation, and a tireless pursuit of knowledge, making me a dedicated and versatile software engineer.
+          </p>
+          <div class="interesse">
+            <h2>Fields of Interest</h2>
+            <div id="area1">
+              <i onclick="showarea3()" id="efeito" class="fas fa-angle-left"></i>
+              <img src="./assets/images/dev.png" alt="web3">
+              <p>
+                Enthralled by software development, I find joy in crafting lines of code that transform abstract ideas into functional, user-centric solutions, driving progress and shaping the digital landscape of tomorrow. It's a dynamic realm where innovation meets logic, enabling limitless potential.
+              </p>              
+              <i onclick="showarea2()" id="efeito" class="fas fa-angle-right"></i>
+            </div>
+            <div id="area2">
+              <i onclick="showarea1()" id="efeito" class="fas fa-angle-left"></i>
+              <img src="./assets/images/aws.png" alt="web3">
+              <p>
+                Captivated by AWS cloud's boundless scalability and cutting-edge services, I'm eager to craft dynamic solutions that leverage its power to drive seamless, global digital transformations. It's a realm where innovation converges with reliability for unparalleled impact.
+              </p>
+              <i class="fas fa-angle-right" onclick="showarea3()" id="efeito"></i>
+            </div>
+            <div id="area3">
+              <i onclick="showarea2()" id="efeito" class="fas fa-angle-left"></i>
+              <img src="./assets/images/arch.png" alt="web3">
+              <p>
+                Fascinated by software architecture's orchestration of complex systems, I'm drawn to sculpting digital landscapes that balance efficiency and innovation. It's where logic meets artistry, shaping the foundation of digital experiences.
+              </p>
+              <i onclick="showarea1()" id="efeito" class="fas fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </div>
+      <div id="contact_container" class="container">
+      <div  onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+      <h1 class="subtitle">My Skills</h1>
+      <section class = "skills">
+        <p> </p>
+    
+        <div class = "row">
+          <h2 class="st">Tech (years experience)</h2>
+
+          
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>C# (9)</span>
+              <span class = "w-60"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-60"></div>
+            </div>
+          </div>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>SQL (15)</span>
+              <span class = "w-80"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-80"></div>
+            </div>
+          </div>
+    
+          <div class = "item">
+            <div class = "item-text">
+              <span>JavaScript (10)</span>
+              <span class = "w-60"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-60"></div>
+            </div>
+          </div>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>HTML5 e CSS3 (10)</span>
+              <span class = "w-60"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-60"></div>
+            </div>
+          </div>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>Node.js (6)</span>
+              <span class = "w-40"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-40"></div>
+            </div>
+          </div>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>React (5)</span>
+              <span class = "w-40"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-40"></div>
+            </div>
+          </div>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>Angular (2)</span>
+              <span class = "w-40"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-30"></div>
+            </div>
+          </div>
+           
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>AWS (3)</span>
+              <span class = "w-35"> </span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-35"></div>
+            </div>
+          </div>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>Python (1) </span>
+              <span class = "w-10"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-10"></div>
+            </div>
+          </div>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>VB6 (12)</span>
+              <span class = "w-70"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-70"></div>
+            </div>
+          </div>
+ 
+
+          <h2 class="st">Soft Skills</h2>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>Communication</span>
+              <span class = "w-100"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-100"></div>
+            </div>
+          </div>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>Leadership and mentorship</span>
+              <span class = "w-100"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-100"></div>
+            </div>
+          </div>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>Problem-Solving</span>
+              <span class = "w-100"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-100"></div>
+            </div>
+          </div>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>Critical Thinking
+              </span>
+              <span class = "w-100"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-100"></div>
+            </div>
+          </div>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>Teamwork</span>
+              <span class = "w-100"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-100"></div>
+            </div>
+          </div>          
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>Accountability</span>
+              <span class = "w-100"></span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-100"></div>
+            </div>
+          </div>
+
+          <h2 class="st">Languages</h2>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>Portuguese</span>
+              <span class = "w-98">Native</span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-98"></div>
+            </div>
+          </div>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>English</span>
+              <span class = "w-80">Full Professional Proficiency</span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-80"></div>
+            </div>
+          </div>
+
+          <div class = "item">
+            <div class = "item-text">
+              <span>Spanish</span>
+              <span class = "w-40">Basic</span>
+            </div>
+            <div class = "progress">
+              <div class = "progress-bar w-40"></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+    
+    <div id="footer">
+      Welcome to my site.
+    </div>
+  <script src="./scripts/index.js" type="text/javascript"></script>
+  <script src="./scripts/particles.js"></script>
+  <script src="./scripts/app.js"></script>
+
+</body>
+</html>
